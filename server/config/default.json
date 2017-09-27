@@ -34,20 +34,20 @@
       "maxIdleTime": 60
     }
   },
-//  "db":{
-//    "driver": "sqlite3",
-//    "dialect":"sqlite",
-//    "database": "dev",
-//    "user": "user",
-//    "password": "password",
-//    "host": "localhost",
-//    "port": "5432",
-//    "logging": true,
-//    "pool": {
-//      "maxConnections": 100,
-//      "maxIdleTime": 60
-//    }
-//  },
+  //  "db":{
+  //    "driver": "sqlite3",
+  //    "dialect":"sqlite",
+  //    "database": "dev",
+  //    "user": "user",
+  //    "password": "password",
+  //    "host": "localhost",
+  //    "port": "5432",
+  //    "logging": true,
+  //    "pool": {
+  //      "maxConnections": 100,
+  //      "maxIdleTime": 60
+  //    }
+  //  },
   "jwt": {
     "secret": "I love shrimp with mayonnaise",
     "options": {
@@ -69,6 +69,12 @@
     */
   },
   "mail": {
+    "from": "StarHackIt <notification@starhack.it>",
+    "signature": "The StarHackIt Team",
+    "smtp": {
+      "host": "localhost",
+      "port": 1025
+    }
     /*
     "from": "StarHackIt <notification@starhack.it>",
     "signature": "The StarHackIt Team",
