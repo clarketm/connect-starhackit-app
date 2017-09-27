@@ -21,11 +21,11 @@
     }
   },
   "db":{
-    "driver": "sqlite3",
-    "dialect":"sqlite",
+    "driver": "pg",
+    "dialect":"postgres",
     "database": "dev",
-    "user": "user",
-    "password": "password",
+    "user": "starhackit",
+    "password": "starhackit",
     "host": "localhost",
     "port": "5432",
     "logging": true,
@@ -34,13 +34,31 @@
       "maxIdleTime": 60
     }
   },
+//  "db":{
+//    "driver": "sqlite3",
+//    "dialect":"sqlite",
+//    "database": "dev",
+//    "user": "user",
+//    "password": "password",
+//    "host": "localhost",
+//    "port": "5432",
+//    "logging": true,
+//    "pool": {
+//      "maxConnections": 100,
+//      "maxIdleTime": 60
+//    }
+//  },
   "jwt": {
     "secret": "I love shrimp with mayonnaise",
     "options": {
       "expiresIn": "15 days"
     }
   },
-  
+
+  "redis":{
+    "url": "redis://localhost:6379"
+  },
+
   "authentication":{
     /*
     "facebook":{
